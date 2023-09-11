@@ -1,0 +1,121 @@
+@import "utility.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Elements */
+body {
+  overflow: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Classes */
+.room-list li {
+  height: 3rem;
+  background-color: white;
+  align-items: center;
+  background-color: #e1e6e4;
+}
+
+.room-list li:first-child {
+  border-width: 1px;
+}
+
+.bordered {
+  border-width: 0 1px 1px 1px;
+  border-color: grey;
+  border-style: solid;
+}
+
+.content {
+  align-items: center;
+}
+
+.menu-item {
+  width: 50%;
+  height: 4rem;
+  text-align: center;
+}
+
+.menu-title {  
+  column-gap: 1rem;
+}
+
+.room-name {
+  margin-bottom: 1rem;
+}
+
+.room-list li:hover {
+  background-color: grey;
+}
+
+.message-list {
+  overflow: scroll;
+  height: 10px;
+  /* height: 99%; */
+}
+
+.my-message {
+  text-align: right;
+  background-color: #dfe6e0;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.page-control {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  column-gap: 1rem;
+}
+
+.message-input {
+  width: 70%;
+}
+
+.bg-header-footer {
+  background-color: #5076f2;
+}
+
+/* IDs */
+#app-view {
+  /* height: 100%; */
+  width: 80%;
+  margin: 0 auto;
+}
+
+#app-menu {
+  display: flex;
+  flex-direction: col;  
+}
+
+#app-menu li:hover {
+  background-color: aqua;
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #app-view {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  #app-view {
+    width: 100%;
+  }
+}

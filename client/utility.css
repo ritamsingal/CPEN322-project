@@ -1,0 +1,21 @@
+/* utility classes */
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.center-all-flex {
+  justify-content: center;
+  align-items: center;  
+}
+
+.bg-purple {
+  background-color: #b062f0;
+}
